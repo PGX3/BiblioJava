@@ -13,6 +13,44 @@ public class Main {
 
         int option = -1;
 
+        while(option != 4){
+
+            System.out.println("\n=== BIBLIOTECA ===");
+            System.out.println("1. Listar livros");
+            System.out.println("2. Emprestar livro");
+            System.out.println("3. Devolver livro");
+            System.out.println("4. Sair");
+            System.out.print("Escolha uma opção: ");
+
+            option = scanner.nextInt();
+
+            switch (option){
+                case 1: 
+                    library.listBooks();
+                break;
+
+                case 2:
+                    library.listBooks();
+                    System.out.print("Digite o número do livro: ");
+                    int loanIndex = scanner.nextInt();
+                    library.loanBook(loanIndex);
+                break;
+                case 3:
+                    library.listBooks();
+                    System.out.print("Digite o número do livro: ");
+                    int returnIndex = scanner.nextInt();
+                    library.returnBook(returnIndex);
+                    break;
+                case 4:
+                    System.out.println("Encerrando o sistema. Até logo!");
+                    break;
+                default:
+                    System.out.println("Opção inválida, tente novamente.");
+            }
+        }
+
+        scanner.close();
+
     }
 
 }
