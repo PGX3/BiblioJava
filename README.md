@@ -1,6 +1,3 @@
-# BiblioJava
-📚 Sistema de gerenciamento de biblioteca desenvolvido em Java
-
 # 📚 Library System
 
 Um sistema de gerenciamento de biblioteca desenvolvido em Java, 
