@@ -18,7 +18,7 @@ public class Library {
         System.out.println("\n=== ACERVO ===\n");
 
         for (int i = 0; i < collection.size(); i++) {
-            System.out.println("[ " + i +" ]";);
+            System.out.println("[ " + i +" ]");
             collection.get(i).InfoShow();
         
         }
@@ -41,5 +41,5 @@ public class Library {
         }
 
         collection.get(index).bookReturn();
-
+    }
 }
