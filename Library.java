@@ -25,7 +25,7 @@ public class Library {
 
     }
 
-    public void returnBook(int index){
+    public void loanBook(int index){
         if (index < 0 || index >= collection.size()) {
             System.out.println("Escolha inválida");
             return;
@@ -34,6 +34,12 @@ public class Library {
 
     }
 
-    public class 
+    public void returnBook(int index){
+        if (index < 0 || index >= collection.size()) {
+            System.out.println("Índice inválido.");
+            return;
+        }
+
+        collection.get(index).bookReturn();
 
 }
